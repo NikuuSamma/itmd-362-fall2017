@@ -1,0 +1,1 @@
+ctrl + windowsKey + Right/Left Arrow
