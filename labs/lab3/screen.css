@@ -1,0 +1,59 @@
+body
+{
+	background-color: #FFDAB9;
+}
+
+#formTitle
+{
+	font-family: Courier;
+	font-size: 1em;
+	font-style: oblique;
+	font-weight: bold;
+	margin: 1em auto -1.5em auto;
+	text-align: center;
+	width: 325px;
+	color: white;
+	background-color: #006620;
+}
+  
+#formContent
+{
+	margin: auto;
+	width: 300px;
+	background-color: #ffffff;
+}
+
+div
+{
+	margin-top: 1em;		
+}
+
+label 
+{
+	display: block;
+	text-align: left;
+	font-size: 1.3em;
+	color: green;
+}
+
+input 
+{
+  font: 1em sans-serif;
+  width: 250px;
+  box-sizing: border-box;
+  border: 1px solid #999;
+}
+
+input:focus 
+{
+  border-color: #000;
+}
+
+button 
+{
+	/* To position the buttons to the same position of the text fields */
+	display: block;
+	margin: 1em auto;
+	width: 5em;
+}
+
