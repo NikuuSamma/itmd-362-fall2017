@@ -57,3 +57,31 @@ button
 	width: 5em;
 }
 
+
+@media only screen and (min-width: 800px) 
+{	
+	#formTitle
+	{
+		width: 425px;
+	}
+	
+	#formContent
+	{
+		width: 400px;
+	}
+	
+	label 
+	{
+		display: inline-block;
+		text-align: left;
+		font-size: 1.3em;
+		width:140px;
+	}
+	
+	input
+	{
+		width: 200px;
+	}
+}
+
+
