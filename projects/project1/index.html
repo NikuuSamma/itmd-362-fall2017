@@ -29,19 +29,19 @@
 					
 					<div>
 						<label class="input">
-							<input type="password" Title="Enter a Password" placeholder="Password">
+							<input type="password" Title="Enter a Password" placeholder="Password" required>
 						</label>
 					</div>
 					
 					<div>
 						<label class="input">
-							<input type="password" Title="Confirm password" placeholder="Confirm Password">
+							<input type="password" Title="Confirm password" placeholder="Confirm Password" required>
 						</label>
 					</div>
 				</fieldset>
 				
 				<fieldset>
-					<table>
+					<table id="nameTable">
 						<tr>
 							<td>
 								<label class="input">	
@@ -56,10 +56,24 @@
 						</tr>
 					</table>
 					<div>
-						<label class="checkbox"><input type ="checkbox" name="checkbox" value="yes" required><i></i>I agree to the Terms of Service</label>
-						<label class="checkbox"><input type ="checkbox" name="checkbox" value="yes" required><i></i>I want to receive news and updates</label>
+						<table id="checkboxTable">
+							<tr>
+								<td>
+									<input type ="checkbox" name="checkbox" required>
+								</td>
+								<td>
+									<p>I agree to the Terms of Service</p>
+								</td>
+							<tr>
+								<td>
+									<input type ="checkbox" name="checkbox">
+								</td>
+								<td>
+									<p>I want to receive news and updates</p>
+								</td>
+							</tr>
+						</table>
 					</div>
-				
 				</fieldset>
 				<footer>
 						<button type="submit" class="button">Submit</button>

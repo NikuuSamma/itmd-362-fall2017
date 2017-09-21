@@ -4,11 +4,6 @@ html, body
 	padding: 0;
 }
 
-a 
-{
-	text-decoration: underline;
-}
-
 body
 {
 	display: block;
@@ -18,19 +13,18 @@ body
 /*Form Wrapper start*/
 #content 
 {
-	max-width: 400px;
+	width: 400px;
 	margin: 0 auto;
 	padding: 40px;
 }
 /*Form wrapper END*/
 
-/*Form cc start*/
+/*Form css start*/
 #formContent
 {
 	margin: 0;
     outline: none;
     box-shadow: 0 0 20px rgba(0,0,0,.3);
-    font: 13px/1.55 'Open Sans', Helvetica, Arial, sans-serif;
     color: #666;
 }
 
@@ -44,15 +38,18 @@ body
 {
  	display: block;
 	padding: 20px 30px;	
-	border-bottom: 1px solid rgba(0,0,0,.1);
+	border-bottom: 1px solid gray;
 	background: rgba(248,248,248,.9);
 }
 
 #formContent h1 
 {
 	font-size: 25px;
-	font-weight: 300;
+	font-weight: bold;
+	font-style: oblique;
+	font-family: "Lucida Console", Monospace, serif;
 	color: #232323;
+	text-align: center;
 }
 
 #formContent fieldset
@@ -65,60 +62,24 @@ body
 
 #formContent fieldset + fieldset 
 {
-	border-top: 1px solid rgba(0,0,0,.1);
+	border-top: 1px solid gray;
 }
 
 #formContent div
 {
 	margin-bottom: 20px		
-}
-
-#formContent footer 
-{
-	display: block;
-	padding: 15px 30px 25px;
-	border-top: 1px solid rgba(0,0,0,.1);
-	background: rgba(248,248,248,.9);
-}
-
-#formContent footer:after 
-{
-	content: '';
-	display: table;
-	clear: both;
-}
-
-#formContent .label 
-{
-	display: block;
-	margin-bottom: 6px;
-	line-height: 19px;
-}
-
-#formContent .input,
-#formContent .checkbox,
-#formContent .button 
-{
-	position: relative;
-	display: block;
-}
+} 
 
 #formContent .input input 
 {
 	display: block;
 	box-sizing: border-box;
-	-moz-box-sizing: border-box;
 	width: 100%;
 	height: 39px;
 	padding: 8px 10px;
 	outline: none;
-	border-width: 2px;
-	border-style: solid;
-	border-radius: 0;
 	background: #fff;
 	font: 15px/19px 'Open Sans', Helvetica, Arial, sans-serif;
-	color: #404040;
-	appearance: normal;
 }
 
 input:focus 
@@ -126,6 +87,13 @@ input:focus
   border-color: #000;
 }
 
+#formContent footer
+{
+	display: block;
+    padding: 15px 30px 65px;
+    border-top: 1px solid gray;
+    background: rgba(248,248,248,.9)
+}
 
 #formContent .button 
 {
@@ -134,11 +102,25 @@ input:focus
 	overflow: hidden;
 	margin: 10px 0 0 20px;
 	padding: 0 25px;
-	outline: none;
 	border: 0;
-	font: 300 15px/39px 'Open Sans', Helvetica, Arial, sans-serif;
-	text-decoration: none;
 	color: #fff;
 	cursor: pointer;
 	background-color: #2da5da;
+}
+
+#nameTable td
+{
+	padding-right: 1em;
+}
+
+#checkboxTable td
+{
+	
+	padding-top: 1em;
+}
+
+#checkboxTable p
+{
+	margin-top: -2px;
+	padding-left: 1em; 
 }
