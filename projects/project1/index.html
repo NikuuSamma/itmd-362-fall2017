@@ -3,39 +3,41 @@
 	<head>
 		<title>Project 1</title>
 		
-		<meta charset="utf-8" />
-		<meta name="viewport" content="width=device-width,initial-scale=1.0,shrink-to-fit=no" />
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width,initial-scale=1.0,shrink-to-fit=no">
 		
-		<link rel="stylesheet" media="screen" href="form.css" />
+		<link rel="stylesheet" media="screen" href="form.css">
+		
+		
 	</head>
 	<body>
 		<div id="content">
 			
-			<form id="formContent" action="/" method="post">	
+			<form id="formContent" action="" method="post">	
 				<header><h1>Registration Form</h1></header>
 				
 				<fieldset>
 					<div>
-						<label class="input">
-							<input type ="text" Title="Enter a User Name" placeholder="User Name" name="userName" required>
+						<label class="input" id="id_1">
+							<input type ="text"  Title="Enter a User Name" placeholder="User Name" name="userName" required>
 						</label>
 					</div>
 				
 					<div>
-						<label class="input">
+						<label class="input" id="id_2">
 							<input type="email" pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,3}" Title="Enter Email" placeholder="Email address" name="email" required>
 						</label>
 					</div>
 					
 					<div>
-						<label class="input">
-							<input type="password" Title="Enter a Password" placeholder="Password" required>
+						<label class="input" id="id_3">
+							<input type="password" Title="Enter a Password" placeholder="Password" name="password" required>
 						</label>
 					</div>
 					
 					<div>
-						<label class="input">
-							<input type="password" Title="Confirm password" placeholder="Confirm Password" required>
+						<label class="input" id="id_4">
+							<input type="password" Title="Confirm password" placeholder="Confirm Password" name="confirmPassword" required>
 						</label>
 					</div>
 				</fieldset>
@@ -44,12 +46,12 @@
 					<table id="nameTable">
 						<tr>
 							<td>
-								<label class="input">	
+								<label class="input" id="id_5">
 									<input type ="text" Title="Enter First name" placeholder="First Name" name="fName" required>
 								</label>
 							</td>
 							<td>
-								<label class="input">
+								<label class="input" id="id_6">
 									<input type ="text" Title="Enter Last name" placeholder="Last Name" name="lName" required>
 								</label>
 							</td>
@@ -76,9 +78,10 @@
 					</div>
 				</fieldset>
 				<footer>
-						<button type="submit" class="button">Submit</button>
+						<button type="submit" class="button" onClick="checkform(this.form)">Submit</button>
 				</footer>
 			</form>
 		</div>
+		<script type="text/javascript" src="script.js"></script>
 	</body>
 </html>
