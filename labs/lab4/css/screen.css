@@ -185,26 +185,119 @@ img, audio, video {
 }
 
 /* ===== BASE STYLES ===== */
-
-/*
-  Major Sixth Modular Scale:
-  http://www.modularscale.com/?22&px&1.667&web&text
-*/
-
-html {
-  font-size: 1.375em; /* 22px */
-  line-height: 1.182em; /* 26px / ~ 120% */
-  padding: 1.182em; /* 26px / ~ 120% */
-  text-rendering: optimizeLegibility;
+html
+{
+	font-size: 1.375em; /* 22px */
+	line-height: 1.182em; /* 26px / ~ 120% */
+	padding: 1.182em; /* 26px / ~ 120% */
+	text-rendering: optimizeLegibility;
 }
 
-label {
-  display: block;
-}
+
 
 /* ===== LAYOUT STYLES ====== */
 
-/* ===== MODULAR STYLES ===== */
+form
+{
+	margin: 0 auto;
+	width: 500px;
+	background-color: #808080;
+}
+	
+#content *
+{
+	line-height: 0.85em; 
+	padding: 0.85em; 
+}
+
+#content h1
+{
+	font-family: 'Nosifer', cursive;
+	font-size: 2em; 
+	text-align: center;
+	width: 500px;
+	margin-left: -0.85em;
+}
+
+#content p
+{
+  font-family: 'Courgette', cursive;
+  font-size: 1em; /* 26px */
+}
+	
+#content label
+{ 
+	font-family: 'Courgette', cursive;
+	margin-left: -0.85em;
+	font-size: 1em; /* 26px */
+}
+	
+#content input
+{
+	box-sizing: border-box;
+	margin-top: 0.25em;
+	font-size: 0.618; /* 16px */
+	box-sizing: border-box;
+	border-style:none;
+}
+
+input[type="checkbox"] 
+{
+  height: 1em;
+  width: 1em;
+  float: left;
+  display: inline;
+  margin-right: 0.85em;
+}
+
+input[type="checkbox"] 
+{
+  height: 1em;
+  width: 1em;
+  float: left;
+  display: inline;
+}
+
+#age-verification 
+{
+	display: block;
+}
+
+	
+#email
+{
+	width: 400px;
+	display: block;
+	background-color: #C0C0C0;
+}
+
+#submit 
+{
+	display: block;
+	margin: 0 auto;
+	width: 200px;
+}
+
+/* ===== MODULAR STYLES ===== 
+
+	Golden Section Modular Scale:
+	http://www.modularscale.com/?26&px&1.618
+
+	Used with the mobile first design
+
+	Major Sixth Modular Scale:
+	http://www.modularscale.com/?22&px&1.667&web&text
+
+	used with the desktop design 
+ */
 
 /* ===== STATE STYLES ======= */
 
+@media screen and (min-width: 800px)
+{
+	form
+	{
+		background-color: #101010;
+		color: #ffffff;
+	}
+}
