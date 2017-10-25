@@ -16,7 +16,8 @@ function checkform(form)
 	return true;
 }
 
-var inputs = document.querySelectorAll('.input');
+var inputs = document.querySelectorAll('.label');
+
 for (var j = 0; j < inputs.length; j++) 
 {
     inputs[j].addEventListener('click', reset);

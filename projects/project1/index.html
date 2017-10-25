@@ -2,86 +2,68 @@
 <html lang="en" class="nojs">
 	<head>
 		<title>Project 1</title>
-		
 		<meta charset="utf-8">
 		<meta name="viewport" content="width=device-width,initial-scale=1.0,shrink-to-fit=no">
-		
 		<link rel="stylesheet" media="screen" href="form.css">
-		
-		
 	</head>
+	
 	<body>
-		<div id="content">
-			
-			<form id="formContent" action="" method="post">	
-				<header><h1>Registration Form</h1></header>
-				
-				<fieldset>
-					<div>
-						<label class="input" id="id_1">
-							<input type ="text"  Title="Enter a User Name" placeholder="User Name" name="userName" required>
+		<form id="content" method="get" action="#null">	
+			<header><h1>Register for Nick's A+ Repair Account</h1></header>
+			<fieldset>
+				<ol>
+					<li>
+						<label for="firstName" id="id_1" class="label">
+							<input type ="text" id="firstName" class="inputs" Title="Enter First name" placeholder="First Name" name="fName" required>
 						</label>
-					</div>
-				
-					<div>
-						<label class="input" id="id_2">
-							<input type="email" pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,3}" Title="Enter Email" placeholder="Email address" name="email" required>
+					</li>
+					<li>
+						<label for="lastName" id="id_2" class="label">
+							<input type ="text" id="lastName" class="inputs" Title="Enter Last name" placeholder="Last Name" name="lName" required>
+						</label>	
+					</li>
+				</ol>
+			</fieldset>
+			<fieldset>	
+				<ol>
+					<li>
+						<label for="userName" id="id_3" class="label">
+							<input type ="text" id="userName" class="inputs" Title="Enter a User Name" placeholder="User Name" name="userName" required>
+							</label>
+					</li>
+					<li>
+						<label for="email" id="id_4" class="label">
+							<input type="email" id="email" class="inputs" pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,3}" Title="Enter Email" placeholder="Email address" name="email" required>
 						</label>
-					</div>
-					
-					<div>
-						<label class="input" id="id_3">
-							<input type="password" Title="Enter a Password" placeholder="Password" name="password" required>
+					</li>
+					<li>
+						<label for="password" id="id_5" class="label">
+							<input type="password" id="password" class="inputs" Title="Enter a Password" placeholder="Password" name="password" required>
+						</label>	
+					</li>
+					<li>
+						<label for="confirmPassword" id="id_6" class="label">
+							<input type="password" id="confirmPassword" class="inputs" Title="Confirm password" placeholder="Confirm Password" name="confirmPassword" required>
 						</label>
-					</div>
-					
-					<div>
-						<label class="input" id="id_4">
-							<input type="password" Title="Confirm password" placeholder="Confirm Password" name="confirmPassword" required>
+					</li>
+					<li>
+						<label for="terms">
+							<input type="checkbox" id="terms" name="checkbox" required/>
+							I agree to the Terms of Service
 						</label>
-					</div>
-				</fieldset>
-				
-				<fieldset>
-					<table id="nameTable">
-						<tr>
-							<td>
-								<label class="input" id="id_5">
-									<input type ="text" Title="Enter First name" placeholder="First Name" name="fName" required>
-								</label>
-							</td>
-							<td>
-								<label class="input" id="id_6">
-									<input type ="text" Title="Enter Last name" placeholder="Last Name" name="lName" required>
-								</label>
-							</td>
-						</tr>
-					</table>
-					<div>
-						<table id="checkboxTable">
-							<tr>
-								<td>
-									<input type ="checkbox" name="checkbox" required>
-								</td>
-								<td>
-									<p>I agree to the Terms of Service</p>
-								</td>
-							<tr>
-								<td>
-									<input type ="checkbox" name="checkbox">
-								</td>
-								<td>
-									<p>I want to receive news and updates</p>
-								</td>
-							</tr>
-						</table>
-					</div>
-				</fieldset>
-				<footer>
-						<button type="submit" class="button" onClick="checkform(this.form)">Submit</button>
-				</footer>
-			</form>
-		</div>
+					</li>
+					<li>
+						<label for="newsAndUpdates">
+							<input type ="checkbox" id="newsAndUpdates"  name="checkbox"/>
+							I want to receive news and updates
+						</label>	
+					</li>
+				</ol>
+			</fieldset>
+			<footer>
+					<button type="submit" class="button" onClick="checkform(this.form)">Register</button>
+			</footer>
+		</form>
 		<script type="text/javascript" src="script.js"></script>
 	</body>
 </html>
